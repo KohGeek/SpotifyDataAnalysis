@@ -50,21 +50,33 @@ print(dataset.track_genre.unique())
 #normilize popularity using min-max normalixzatioin
 #binarize explicite
 
+#normalize data betweeb [0-1]
 def minMax_normalization(column):
     clean_dataset[column] = (clean_dataset[column] - clean_dataset[column].min()) / (clean_dataset[column].max() - clean_dataset[column].min())
     return clean_dataset[column]       
 
+#backup data 
 clean_dataset=dataset.copy()
+
+#drop dup data
 clean_dataset.drop_duplicates(subset=['track_id'],inplace=True)
+
+#drop loudness column
 clean_dataset.drop('loudness',axis=1,inplace=True)
 
 #drop the song where genre is sleep since there is mostly asmr like song
 clean_dataset.drop(clean_dataset.index[clean_dataset['track_genre'] == 'sleep'], inplace=True)
+
 #remove row where tempo is 0
 clean_dataset.drop(clean_dataset.index[clean_dataset['tempo'] == 0], inplace=True)
+
+#normalize popularity
 minMax_normalization('popularity')
+
+#binarize explicit True False to 1 and 0
 clean_dataset["explicit"] = clean_dataset["explicit"].astype(int)
 
+#export
 clean_dataset.to_csv('clean_data.csv',index=False)
 
 
