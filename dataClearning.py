@@ -55,7 +55,7 @@ def minMax_normalization(column):
     return clean_dataset[column]       
 
 clean_dataset=dataset.copy()
-clean_dataset.drop_duplicates(subset=['track_id'])
+clean_dataset.drop_duplicates(subset=['track_id'],inplace=True)
 clean_dataset.drop('loudness',axis=1,inplace=True)
 
 #drop the song where genre is sleep since there is mostly asmr like song
