@@ -30,7 +30,7 @@ print(dataset.info())
 print('\n\n')
 print(dataset.head())
 
-#2.Handling Missing Values
+#2. Handling Missing Values
 
 dataset_columns = dataset.columns.tolist()
 print('\n')
