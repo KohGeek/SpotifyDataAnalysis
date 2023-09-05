@@ -1,3 +1,10 @@
+# Custom ignores
+miningConfig/
+pyvenv.cfg
+Scripts/
+Include/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
