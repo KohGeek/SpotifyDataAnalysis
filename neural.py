@@ -59,7 +59,7 @@ print("Loss: ", score[0])
 print("Accuracy: ", score[1])
 print("\n")
 
-tf.keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
+# tf.keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
 
 img = Image.open('model.png')
 img.show()
