@@ -60,9 +60,13 @@ print("Loss: ", score[0])
 print("Accuracy: ", score[1])
 print("\n")
 
+<<<<<<< HEAD:neural.py
 model.summary()
 
 tf.keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
+=======
+# tf.keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
+>>>>>>> c5175bd679ad5ca15d1755030e68c4e565c97395:old_src/neural.py
 
 img = Image.open('model.png')
 img.show()

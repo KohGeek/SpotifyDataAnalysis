@@ -3,7 +3,9 @@ miningConfig/
 pyvenv.cfg
 Scripts/
 Include/
-
+config/
+*.png
+newSpotifyDataAnalysis.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
