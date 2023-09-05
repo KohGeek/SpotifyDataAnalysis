@@ -180,26 +180,7 @@ import category_encoders as ce
 # In[24]:
 
 
-encoder1=ce.BaseNEncoder(cols=['track_genre','album_name', 'track_name','artists'], base=10, return_df=True)
-data=encoder1.fit_transform(data)
-data.head()
 
-
-# In[25]:
-
-
-data=pd.get_dummies(data=data, columns=['speechiness_type'], drop_first=True)
-print(data.shape)
-data.head()
-
-
-# In[26]:
-
-
-data['explicit']=np.where(data['explicit']==False, 0,1)
-
-
-# In[27]:
 
 
 from sklearn.preprocessing import StandardScaler

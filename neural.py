@@ -28,6 +28,7 @@ print(y.head())
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+#turn it to one hot
 encoder = LabelEncoder()
 encoder.fit(y_train)
 y_train = encoder.transform(y_train)
@@ -49,15 +50,17 @@ model = Sequential()
 model.add(Dense(12, input_dim=13, activation='relu'))
 model.add(Dense(10, activation='softmax'))
 
-model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['categorical_accuracy'])
 
-history = model.fit(X_train, y_train, epochs=200, batch_size=5, validation_split=0.1)
+history = model.fit(X_train, y_train, epochs=250, batch_size=10, validation_split=0.1)
 
 score = model.evaluate(X_test, y_test)
 print("\n")
 print("Loss: ", score[0])
 print("Accuracy: ", score[1])
 print("\n")
+
+model.summary()
 
 tf.keras.utils.plot_model(model, to_file='model.png', show_shapes=True)
 
