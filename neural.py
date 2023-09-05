@@ -10,7 +10,7 @@ from PIL import Image
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('clean_data_dog.csv')
+df = pd.read_csv('csvs/clean_data.csv')
 
 print("\n")
 print(df.head())

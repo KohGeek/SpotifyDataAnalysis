@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # To import the Iris dataset
-df = pd.read_csv('clean_data_dog.csv')
+df = pd.read_csv('csvs/clean_data.csv')
 
 # Preview dataset
 print("\n")

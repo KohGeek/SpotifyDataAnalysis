@@ -4,7 +4,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
 
-df = pd.read_csv('clean_data_dog.csv')
+df = pd.read_csv('csvs/clean_data.csv')
 
 
 X = df.drop('track_genre', axis=1)
