@@ -1,20 +1,19 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
-graphviz=2.50.0
-ipykernel=6.25.0
-ipython=8.12.2
-keras=2.10.0
-matplotlib=3.7.1
-nbconvert=6.5.4
-numpy=1.25.2
-pandas=2.0.3
-pillow=9.4.0
-plotly=5.9.0
-python=3.10.12
-scikit-learn=1.2.2
-scipy=1.11.1
-seaborn=0.12.2
-statsmodels=0.14.0
-tabulate=0.8.10
-tensorflow=2.10.0
+graphviz
+ipykernel
+ipython
+keras
+matplotlib
+nbconvert
+numpy
+pandas
+pillow
+plotly
+scikit-learn
+scipy
+seaborn
+statsmodels
+tabulate
+tensorflow

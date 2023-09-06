@@ -1,0 +1,23 @@
+# This file may be used to create an environment using:
+# $ conda env create --name <env> --file <this file>
+# platform: win-64
+name: spotify-data-analysis
+channels:
+  - intel
+dependencies:
+  - graphviz
+  - ipykernel
+  - ipython
+  - keras
+  - matplotlib
+  - nbconvert
+  - numpy
+  - pandas
+  - pillow
+  - plotly
+  - scikit-learn
+  - scipy
+  - seaborn
+  - statsmodels
+  - tabulate
+  - intel::tensorflow
