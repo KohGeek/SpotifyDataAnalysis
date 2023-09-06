@@ -3,21 +3,24 @@
 # platform: win-64
 name: spotify-data-analysis
 channels:
-  - intel
+  - conda-forge
 dependencies:
-  - graphviz
   - ipykernel
   - ipython
   - keras
+  - conda-forge::keras-tuner
   - matplotlib
   - nbconvert
   - numpy
   - pandas
   - pillow
   - plotly
+  - conda-forge::pydotplus
+  - conda-forge::pygraphviz
+  - python=3.10
   - scikit-learn
   - scipy
   - seaborn
   - statsmodels
   - tabulate
-  - intel::tensorflow
+  - tensorflow

@@ -6,6 +6,7 @@ Include/
 config/
 *.png
 newSpotifyDataAnalysis.py
+search/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

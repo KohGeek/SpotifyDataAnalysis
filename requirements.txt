@@ -5,12 +5,14 @@ graphviz
 ipykernel
 ipython
 keras
+keras-tuner
 matplotlib
 nbconvert
 numpy
 pandas
 pillow
 plotly
+pydotplus
 scikit-learn
 scipy
 seaborn
